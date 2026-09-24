@@ -21,7 +21,7 @@ const Book = () => {
 
     try {
       const { data } = await axios.post(
-        'http://localhost:5000/api/v1/appointment/send', 
+        'https://saloon-booking-system-knth.onrender.com/api/v1/appointment/send', 
         { firstName, lastName, phoneNumber, service, date, time },
         {
           headers: {
